@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Orientation Application- IT Tralee</title>
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="css/form.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.mmenu.min.all.js"></script>
+
+
+		<!-- Test -->
+		<script src="zabuto_calendar.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="zabuto_calendar.min.css">
+		<!-- Test -->
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide', 'pageshadow' ],
+					header		: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+						content		: '<a href="http://www.ittralee.ie/en/">Visit the website of the IT Tralee</a>'
+					}
+				});
+			});
+
+
+		</script>
+		<style>
+			img {
+				max-height:457px;
+				max-width:548px;
+				height:100%;
+				width:100%;
+
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				Orientation Application - Institute of Technology of Tralee
+			</div>
+			<div class="content">
+				<h1> Calendar</h1>
+				<br>
+				<br>
+				<label for="filter">Filter</label>
+								<select name="filter" onchange:>
+								    <option value="breaks">Breaks/Bank holidays</option>
+								    <option value="events">Events/tours</option>
+								    <option value="exam">Exam periods</option>
+								</select>
+								<br>
+				<img src="calendar.PNG" alt="Calendar">
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="sports.html">Sports/Activities</a></li>
+					<li><a href="#about">Admission</a>
+						<ul>
+							<li><a href="#about/fees">Fees</a></li>
+							<li><a href="#about/deadline">Deadline</a></li>
+							<li><a href="#about/documents">Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Information</a>
+						<ul>
+							<li><a href="library.html">Library</a></li>
+							<li><a href="#about/shopcanteen">Shop/Canteen</a></li>
+							<li><a href="#about/transports">Transports</a></li>
+							<li><a href="accomodation.html">Accomodation</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
+
+<!-- 
+<li><a href="#about/team">Fees</a>
+								<ul>
+									<li><a href="#about/team/management">Management</a></li>
+									<li><a href="#about/team/sales">Sales</a></li>
+									<li><a href="#about/team/development">Development</a></li>
+								</ul>
+							</li>
+
+-->
